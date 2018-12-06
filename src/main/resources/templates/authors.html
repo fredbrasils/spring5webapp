@@ -11,10 +11,12 @@
     <tr>
         <th>ID</th>
         <th>Name</th>
+        <th>Last</th>
     </tr>
     <tr th:each="author : ${authors}">
         <td th:text="${author.id}">123</td>
-        <td th:text="${author.name}">Spring in Action</td>
+        <td th:text="${author.firstName}">Joao</td>
+        <td th:text="${author.lastName}">Santos</td>
     </tr>
 </table>
 

@@ -11,9 +11,9 @@ public class BookController {
 
 	private BookRepository bookRepository;
 
-	public void setBookRepository(BookRepository bookRepository) {
-		this.bookRepository = bookRepository;
-	}
+	public BookController(BookRepository bookRepository) {
+        this.bookRepository = bookRepository;
+    }
 
 	@RequestMapping("/books")
 	public String getBooks(Model model) {

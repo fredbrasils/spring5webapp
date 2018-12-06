@@ -1,0 +1,33 @@
+package guru.springframework.spring5webapp.model;
+
+public class FakeDataSource {
+
+	private String user;
+	private String pwd;
+	private String url;
+
+	public String getUser() {
+		return user;
+	}
+
+	public void setUser(String user) {
+		this.user = user;
+	}
+
+	public String getPwd() {
+		return pwd;
+	}
+
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+}

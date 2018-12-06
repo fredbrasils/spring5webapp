@@ -11,9 +11,9 @@ public class AuthorController {
 
 	private AuthorRepository authorRepository;
 
-	public void setAuthorRepository(AuthorRepository authorRepository) {
-		this.authorRepository = authorRepository;
-	}
+	  public AuthorController(AuthorRepository authorRepository) {
+	        this.authorRepository = authorRepository;
+	   }
 
 	@RequestMapping("/authors")
 	public String getAuthors(Model model) {
